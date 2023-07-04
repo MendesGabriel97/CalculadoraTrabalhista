@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inicital-scale=1, maximum-scake=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Área Administrativa</title>
+	<script type="text/javascript">
+		let acesso = prompt("Digite sua senha de acesso:")
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html"> << VOLTAR </a>
+		</nav>
+		<h3>Treinamento</h3>
+		<h4>FRONT-END Essencial</h4>
+	</header>
+	<br><br>
+	<section class="container">
+		<h2>Área Administrativa</h2>
+		<p>O acesso a esta página é restrito a funcionários.</p>
+		<div class="resposta">
+			<script type="text/javascript">
+				if(acesso === "1234"){
+					document.write("Olá Funcionário(a)."+"<br />");
+					document.write("Tenha um bom dia de serviço."+"<br />");
+				}else{
+					document.write("Acesso negado!"+"<br />");
+				}			
+			</script>
+		</div>
+	</section>		
+	<footer>
+		<h3>Treinamento</h3>
+		<h4>FRONT-END</h4>
+		<br>
+		<p class="texto-footer">Contatos:</p>
+		<p class="texto-footer">TreinamentoFront@outlook.com</p>
+		<p class="texto-footer">Celular:47 90000-0000</p>
+	</footer>
+</body>
+</html>

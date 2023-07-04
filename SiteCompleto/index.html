@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inicital-scale=1, maximum-scake=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Calculadora: FGTS, Férias e Décimo</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">INICIO</a>
+			<a href="#FGTS">FGTS</a>
+			<a href="#ferias">FÉRIAS</a>
+			<a href="#decimo">DÉCIMO</a>
+		</nav>
+		<h3>Treinamento</h3>
+		<h4>FRONT-END</h4>
+	</header>
+	<br><br>
+	<br>
+	<section class="container">
+		<h1>FGTS, Férias e Décimo Terceiro!</h1>
+		<h2>Calculadora de Direitos Trabalhistas</h2>
+		<p>Olá!</p>
+		<p>Vamos falar um pouco sobre o conteúdo a seguir.</p>
+		<p>Bem-vindo à nossa página dedicada aos cálculos do FGTS, férias e décimo terceiro salário!</p>
+		<p>Aqui você encontrará ferramentas e informações úteis para calcular esses importantes benefícios trabalhistas no Brasil.</p>
+		<p>Nosso objetivo é ajudá-lo a entender como esses cálculos são feitos e fornecer as fórmulas e orientações necessárias para obter resultados precisos.</p>
+		<a href="#" id="FGTS"></a><br>
+	</section>
+	<br><br>
+	<br><br>
+	<section class="container">
+		<h2>FGTS</h2>
+		<p>O que é: O FGTS é uma poupança aberta pela empresa em nome do trabalhador que funciona como uma garantia para protegê-lo em caso de demissão sem justa causa.</p> 
+		<p>Os valores do FGTS pertencem exclusivamente ao trabalhador e, em algumas situações especiais, pode ser sacado sem que o trabalhador tenha deixado o emprego.</p>
+		<h2>Cálculo</h2>
+		<label for="salario">Salário</label><br>
+		<input type="number" id="salario" placeholder="Insira seu salário">
+		<br><br>
+		<label for="tempo">Tempo trabalhado (em meses)</label><br>
+		<input type="number" id="tempo" placeholder="Insira o número de meses">
+		<br><br>
+		<button onclick="fgts()">CALCULAR</button>
+		<br><br>
+		<p><b>O Valor aproximado de FGTS no período é de: R$<span></span></b></p>
+		<script type="text/javascript">
+			let salario = document.querySelector('#salario');
+			let tempo = document.querySelector('#tempo');
+			let resultado = document.querySelector('span');
+			function fgts(){
+				resultado.innerHTML = parseFloat(salario.value/100*8)*tempo.value;
+			}
+		</script>
+		<a href="#" id="ferias"></a>
+	</section>
+	<br><br>
+	<br><br>
+	<section class="container">
+		<h2>Férias</h2>
+		<p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+		<p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+		<h2>Cálculo</h2>
+		<br><br>
+		<a href="ferias.html" class="link">Clique para Calcular Férias</a>
+		<br><br>
+		<a href="#" id="decimo"></a>
+	</section>
+	<br><br>
+	<br><br>
+	<section class="container">
+		<h2>Décimo</h2>
+		<p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
+		<p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
+		<h2>Cálculo</h2>
+		<br><br>
+		<a href="decimo.html" class="link">Clique para Calcular Décimo</a>
+		<br><br>
+	</section>
+	<br><br><br><br><br>
+	<br><br><br><br>
+	<section class="container" id="grid-container">		
+		<h3>Clique para saber mais</h3>
+		<div class="grid">
+			<div>
+				<h2>FGTS</h2>
+				<a href="https://www.fgts.gov.br/Pages/default.aspx"><img src="img/fgts.png" alt="Imagem FGTS"></a>
+			</div>
+    		<div>
+				<h2>Férias</h2>
+				<a href="https://www.tst.jus.br/ferias1"><img src="img/ferias.png" alt="Imagem FÉRIAS"></a>
+			</div>
+			<div>
+				<h2>Décimo</h2>
+				<a href="https://www.tst.jus.br/13-salario"><img src="img/decimo.png" alt="Imagem DÉCIMO"></a>
+			</div>
+			<div>
+				<h2>Investimento</h2>
+				<a href="https://www.investing.com/"><img src="img/investimentos.png" alt="Imagem INVESTIMENTO"></a>
+			</div>
+			<div>
+				<h2>Renda Extra</h2>
+				<a href="https://www.freelancer.com/"><img src="img/renda-extra.png" alt="Imagem RENDA-EXTRA"></a>
+			</div>
+			<div>
+				<h2>Serviços</h2>
+				<a href="https://www.thumbtack.com/"><img src="img/servicos.png" alt="Imagem SERVICOS"></a>
+			</div>
+	</section>
+	<br><br>
+	<footer>
+		<h3>Treinamento</h3>
+		<h4>FRONT-END</h4>
+		<br>
+		<p class="texto-footer">Contatos:</p>
+		<p class="texto-footer">TreinamentoFront@outlook.com</p>
+		<p class="texto-footer">Celular:47 90000-0000</p>
+		<br>
+		<p class="texto-footer"><a href="adm.html">Acessar Área Administrativa</a></p>
+	</footer>
+</body>
+</html>
+
+<!--
+	<div class="compre">
+		<h5>Compre agora mesmo</h5>
+		<button>COMPRAR</button>	
+	</div> -->
+
+
+<!--
+	<section class="container" id="formulario">
+		<h2>Selecione um Produto para mais Informações</h2>
+		<form action="#" method="get" target="_blank">
+			<p class="formulario-contato">
+				<label for="Nome=">Nome</label>
+				<br>
+				<input class="dados-formulario type="text" id="nome" name="nome" placeholder="Insira seu nome:">				
+			</p>
+			<p class="formulario-contato">
+				<label for="Nome=">Contato</label>
+				<br>
+				<input class="dados-formulario type="tel" id="tel" name="tel" placeholder="Insira seu WhatsApp:">				
+			</p>			
+			<p class="formulario-contato">
+				<input type="checkbox" id="office" name="office" value="cursos de office">
+				<label for="office">Curso de Office</label>
+				<br>
+
+				<input type="checkbox" id="web" name="web" value="cursos de web">
+				<label for="Web">Curso de web</label>
+				<br>
+				
+				<input type="checkbox" id="excell" name="excell" value="cursos de excell">
+				<label for="excell">Curso de Excell</label>
+				<br>				
+			</p>
+			<p class="formulario-contato">
+				<input type="submit" value="ENVIAR">
+				<input type="reset" value="LIMPAR">
+			</p>
+		</form>		
+	</section> -->
